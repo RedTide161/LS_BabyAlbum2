@@ -55,7 +55,7 @@ public class BaptismFragment1 extends Fragment {
         // initialise all editTexts
         init(root);
 
-        // get newest Data from Database
+        // get newest Data from SQLite Database
         bookdataViewModel = ViewModelProviders.of(this).get(BookdataViewModel.class);
         bookdataViewModel.getAllBookdataEntries().observe(getViewLifecycleOwner(), new Observer<List<LSBookdata>>() {
             @Override
