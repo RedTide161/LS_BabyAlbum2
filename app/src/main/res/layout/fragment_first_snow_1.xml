@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bkgnd_sv_ht"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_twocolored_greywhite"
+        app:layout_constraintTop_toBottomOf="@+id/et_fs_textinput_3">
+
+        <ImageView
+            android:id="@+id/icbg_fs_pic1"
+            android:layout_width="62dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fs_Titel"
+            app:srcCompat="@drawable/snowflake4" />
+
+        <ImageView
+            android:id="@+id/icbg_fs_pic2"
+            android:layout_width="37dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_fs_text_4"
+            app:layout_constraintEnd_toStartOf="@+id/et_fs_textinput_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fs_text_3"
+            app:srcCompat="@drawable/snowflake4" />
+
+        <ImageView
+            android:id="@+id/ivbg_fs_pic3"
+            android:layout_width="43dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginLeft="88dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginRight="88dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_fs_text_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_fs_textinput_1"
+            app:srcCompat="@drawable/snowflake2" />
+
+        <ImageView
+            android:id="@+id/icbg_fs_pic4"
+            android:layout_width="37dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_fs_text_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fs_Titel"
+            app:srcCompat="@drawable/snowflake3" />
+
+        <ImageView
+            android:id="@+id/icbg_fs_pic5"
+            android:layout_width="118dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_fs_text_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_fs_textinput_2"
+            app:srcCompat="@drawable/sled" />
+
+        <TextView
+            android:id="@+id/tv_fs_Titel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_fs_Title"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_fs_text_1"
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_fs_text_1"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fs_Titel" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_fs_textinput_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:ems="11"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="15dp"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/et_fs_textinput_2"
+            app:layout_constraintStart_toStartOf="@+id/tv_fs_text_1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fs_text_1" />
+
+        <TextView
+            android:id="@+id/tv_fs_text_2"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_fs_text_2"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_fs_textinput_1" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_fs_textinput_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:ems="11"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="15dp"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/et_fs_textinput_3"
+            app:layout_constraintStart_toStartOf="@+id/tv_fs_text_2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fs_text_2" />
+
+        <TextView
+            android:id="@+id/tv_fs_text_3"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="end"
+            android:text="@string/tv_fs_text_3"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_fs_textinput_2" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_fs_textinput_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:ems="13"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="end"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="15dp"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/et_fs_textinput_4"
+            app:layout_constraintEnd_toEndOf="@+id/tv_fs_text_3"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fs_text_3" />
+
+        <TextView
+            android:id="@+id/tv_fs_text_4"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="end"
+            android:text="@string/tv_fs_text_4"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_fs_textinput_3" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionDoneEditText
+            android:id="@+id/et_fs_textinput_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:background="@android:color/transparent"
+            android:ems="11"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="end"
+            android:inputType="textCapSentences|textMultiLine"
+            android:paddingBottom="24dp"
+            android:textSize="15dp"
+            android:imeOptions="actionDone"
+            app:layout_constraintEnd_toEndOf="@+id/tv_fs_text_4"
+            app:layout_constraintTop_toBottomOf="@+id/tv_fs_text_4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

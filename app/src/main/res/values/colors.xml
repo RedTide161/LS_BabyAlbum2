@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ededed</color>
+    <color name="colorPrimaryDark">#696969</color>
+    <color name="colorAccent">#636363</color>
+    <color name="colorBackground">#8CFFFB</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#696969</color>
+    <color name="colorLightGrey">#BBBBBB</color>
+    <color name="colorProgressBar">	#00FFFF</color>
+    <color name="colorShadow">#575859</color>
+    
+    <color name="colorblue">#147B9A</color>
+    <color name="colororange">#FAC472</color>
+    <color name="coloryellow">#FFFFCC</color>
+    <color name="colorgreen">#6FAA57</color>
+    <color name="colorpink">#F0939C</color>
+    <color name="colorlavender">#E6E6FA</color>
+    <color name="colorturquoise">#088DA5</color>
+
+    <!-- complementary color of -->
+    <!-- blue -->
+    <color name="complementaryOfBlue">#FF7F00</color>
+</resources>

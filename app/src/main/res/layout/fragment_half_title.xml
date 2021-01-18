@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewHT1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_halftitle">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="120dp">
+
+
+        <TextView
+            android:id="@+id/cd_Titel_1"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="70dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="center_horizontal"
+            android:text="@string/tv_cd_Titel_1"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/etChildName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cd_Titel_1"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:ems="8"
+            android:fontFamily="@font/architects_daughter"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cd_Titel_1" />
+
+        <TextView
+            android:id="@+id/cd_Titel_2_1"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etChildName"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="center"
+            android:text="@string/tv_cd_Titel_2_1"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textSize="32dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etChildName" />
+
+        <TextView
+            android:id="@+id/cd_Titel_2_2"
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cd_Titel_2_1"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="center"
+            android:text="@string/tv_cd_Titel_2_2"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cd_Titel_2_1" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionDoneEditText
+            android:id="@+id/etCreator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cd_Titel_2_2"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:ems="8"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center_horizontal"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="1"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cd_Titel_2_2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

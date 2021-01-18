@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bkgnd_sv_bd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_twocolored_greenpurple">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ivbg_b_pic1"
+            android:layout_width="131dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/et_p_preg_well_being"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/hearts" />
+
+        <ImageView
+            android:id="@+id/ivbg_b_pic2"
+            android:layout_width="261dp"
+            android:layout_height="81dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_b_delivery_room_text_5"
+            app:srcCompat="@drawable/best_gift" />
+
+
+        <TextView
+            android:id="@+id/tv_intro_birth"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_b_Title"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_b_contraction_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_b_contraction_start"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_intro_birth" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_b_contraction_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="15dp"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/et_b_weather"
+            app:layout_constraintStart_toStartOf="@+id/tv_b_contraction_start"
+            app:layout_constraintTop_toBottomOf="@+id/tv_b_contraction_start" />
+
+        <TextView
+            android:id="@+id/tv_b_contr_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="start"
+            android:text="@string/tv_b_contr_start_time"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_b_contr_start_time"
+            app:layout_constraintEnd_toStartOf="@+id/et_b_contr_start_time"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/et_b_contr_start_time"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="5"
+            android:focusable="false"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center_horizontal"
+            android:inputType="none"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_b_contr_start_date"
+            app:layout_constraintEnd_toStartOf="@+id/tv_b_contr_start_date"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_b_contr_start_time" />
+
+        <TextView
+            android:id="@+id/tv_b_contr_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_b_contr_start_tud"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_b_contr_start_date"
+            app:layout_constraintEnd_toStartOf="@+id/et_b_contr_start_date"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/et_b_contr_start_time" />
+
+        <EditText
+            android:id="@+id/et_b_contr_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:background="@android:color/transparent"
+            android:ems="6"
+            android:focusable="false"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:inputType="none"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_b_contr_start_date"
+            app:layout_constraintTop_toBottomOf="@+id/et_b_contraction_start" />
+
+        <TextView
+            android:id="@+id/tv_b_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="start"
+            android:text="@string/tv_b_contr_start_weahter"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_b_contr_start_time" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_b_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="15dp"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/et_b_delivery_room_duration"
+            app:layout_constraintStart_toStartOf="@+id/tv_b_weather"
+            app:layout_constraintTop_toBottomOf="@+id/tv_b_weather" />
+
+        <TextView
+            android:id="@+id/tv_b_delivery_room_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="end"
+            android:text="@string/tv_b_delivery_room_text_1"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toStartOf="@+id/et_b_delivery_room_time"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_b_weather" />
+
+        <EditText
+            android:id="@+id/et_b_delivery_room_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="5"
+            android:focusable="false"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center_horizontal"
+            android:inputType="none"
+            android:textSize="15dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_b_delivery_room_text_1"
+            app:layout_constraintEnd_toStartOf="@+id/tv_eye_color"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_b_delivery_room_text_1" />
+
+        <TextView
+            android:id="@+id/tv_b_delivery_room_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="start"
+            android:text="@string/tv_b_delivery_room_text_2"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_b_delivery_room_time"
+            app:layout_constraintStart_toEndOf="@+id/et_b_delivery_room_time" />
+
+        <TextView
+            android:id="@+id/tv_b_delivery_room_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_b_delivery_room_text_3"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toStartOf="@+id/et_b_delivery_room_duration"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_b_delivery_room_text_1" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_b_delivery_room_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="2"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textSize="15dp"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/et_b_location_of_birth"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_b_delivery_room_text_3"
+            app:layout_constraintEnd_toStartOf="@+id/tv_b_delivery_room_text_4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_b_delivery_room_text_3" />
+
+        <TextView
+            android:id="@+id/tv_b_delivery_room_text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="72dp"
+            android:layout_marginRight="72dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_b_delivery_room_text_4"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_b_delivery_room_duration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/et_b_delivery_room_duration" />
+
+        <TextView
+            android:id="@+id/tv_b_delivery_room_text_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="start"
+            android:text="@string/tv_b_delivery_room_text_5"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_b_delivery_room_text_3" />
+
+        <TextView
+            android:id="@+id/tv_b_location_of_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="start"
+            android:text="@string/tv_b_location_of_birth"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/tv_b_delivery_room_text_5"
+            app:layout_constraintTop_toBottomOf="@+id/ivbg_b_pic2" />
+
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_b_location_of_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:ems="11"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="15"
+            android:textSize="15dp"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/et_b_name_midwife"
+            app:layout_constraintStart_toStartOf="@+id/tv_b_location_of_birth"
+            app:layout_constraintTop_toBottomOf="@+id/tv_b_location_of_birth" />
+
+        <TextView
+            android:id="@+id/tv_b_name_midwife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="start"
+            android:text="@string/tv_b_name_midwife"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/et_b_location_of_birth"
+            app:layout_constraintTop_toBottomOf="@+id/et_b_location_of_birth" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_b_name_midwife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:ems="11"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="15dp"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/et_b_Hospital_Docs_midwife"
+            app:layout_constraintStart_toStartOf="@+id/tv_b_name_midwife"
+            app:layout_constraintTop_toBottomOf="@+id/tv_b_name_midwife" />
+
+        <TextView
+            android:id="@+id/tv_b_Hospital_Docs_midwife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="start"
+            android:text="@string/tv_b_Hospital_Docs_midwife"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/et_b_name_midwife"
+            app:layout_constraintTop_toBottomOf="@+id/et_b_name_midwife" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_b_Hospital_Docs_midwife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:ems="11"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="15dp"
+            android:imeOptions="actionNext"
+            android:nextFocusDown="@id/et_b_accompaniment"
+            app:layout_constraintStart_toStartOf="@+id/tv_b_Hospital_Docs_midwife"
+            app:layout_constraintTop_toBottomOf="@+id/tv_b_Hospital_Docs_midwife" />
+
+
+        <TextView
+            android:id="@+id/tv_b_accompaniment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="start"
+            android:text="@string/tv_b_accompaniment"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/et_b_Hospital_Docs_midwife"
+            app:layout_constraintTop_toBottomOf="@+id/et_b_Hospital_Docs_midwife" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionDoneEditText
+            android:id="@+id/et_b_accompaniment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"
+            android:background="@android:color/transparent"
+            android:ems="11"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textSize="15dp"
+            android:imeOptions="actionDone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_b_accompaniment"
+            app:layout_constraintTop_toBottomOf="@+id/tv_b_accompaniment" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

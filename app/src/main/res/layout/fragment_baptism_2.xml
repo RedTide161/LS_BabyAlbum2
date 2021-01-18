@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_twocolored_greywhite">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivbg_p_pic3"
+            android:layout_width="187dp"
+            android:layout_height="135dp"
+            android:layout_marginStart="228dp"
+            android:layout_marginLeft="228dp"
+            android:rotation="-45"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/olive_branch"
+            tools:layout_editor_absoluteY="-22dp" />
+
+
+        <TextView
+            android:id="@+id/tv_btm_text_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_btm_text_9"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_btm_inputText_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:ems="12"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="65"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_btm_text_9"
+            app:layout_constraintTop_toBottomOf="@+id/tv_btm_text_9" />
+
+        <TextView
+            android:id="@+id/tv_btm_text_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_btm_text_10"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_btm_inputText_9" />
+
+        <EditText
+            android:id="@+id/et_btm_inputText_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="130"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_btm_text_10"
+            app:layout_constraintTop_toBottomOf="@+id/tv_btm_text_10" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_btm_pic1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shadow"
+            android:elevation="8dp"
+            app:layout_constraintStart_toStartOf="@+id/ll_btm_pic3"
+            app:layout_constraintTop_toBottomOf="@+id/et_btm_inputText_10">
+
+            <ImageView
+                android:id="@+id/iv_btm_pic1"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:adjustViewBounds="true"
+                android:background="@color/colorPrimary"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_icon_imageview"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_btm_pic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shadow"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/ll_btm_pic3"
+            app:layout_constraintTop_toBottomOf="@+id/et_btm_inputText_10">
+
+            <ImageView
+                android:id="@+id/iv_btm_pic2"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:adjustViewBounds="true"
+                android:background="@color/colorPrimary"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_icon_imageview"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_btm_pic3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/shadow"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_p_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ll_btm_pic1">
+
+
+            <ImageView
+                android:id="@+id/iv_btm_pic3"
+                android:layout_width="300dp"
+                android:layout_height="169dp"
+                android:adjustViewBounds="true"
+                android:background="@color/colorWhite"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add_icon_imageview"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_p_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="56dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

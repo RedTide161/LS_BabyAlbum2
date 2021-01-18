@@ -1,0 +1,24 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:fontFamily">@font/dancing_script_bold</item>
+  </style>
+
+  <!-- Color for Circular Progressbar -->
+  <style name="ProgressBarTheme">
+    <item name="colorAccent">@color/colorProgressBar</item>
+  </style>
+
+  <!-- Style for Image Cropper -->
+  <style name="CropperBarTheme" parent="@style/Theme.AppCompat.Light">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="titleTextColor">@color/colorPrimaryDark</item>
+    <item name="actionMenuTextColor">@color/colorPrimaryDark</item>
+    <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+  </style>
+</resources>

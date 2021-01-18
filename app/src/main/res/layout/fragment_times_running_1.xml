@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_twocolored_greenblue">
+
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/ivbg_tir_pic1"
+        android:layout_width="107dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_tir_inputText_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_intro_tir"
+        app:srcCompat="@drawable/flying_clock" />
+
+
+    <ImageView
+        android:id="@+id/ivbg_tir_pic2"
+        android:layout_width="170dp"
+        android:layout_height="279dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/et_tir_inputText_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_tir_text_3"
+        app:srcCompat="@drawable/father_son" />
+
+
+    <TextView
+        android:id="@+id/tv_intro_tir"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="@string/tv_tir_Title"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tir_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="@string/tv_tir_text_1"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_intro_tir" />
+
+    <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+        android:id="@+id/et_tir_inputText_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:ems="8"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="start"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textSize="15dp"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@id/et_tir_inputText_2"
+        app:layout_constraintStart_toStartOf="@+id/tv_tir_text_1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tir_text_1" />
+
+    <TextView
+        android:id="@+id/tv_tir_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:gravity="start"
+        android:text="@string/tv_tir_text_2"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_tir_inputText_1" />
+
+    <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+        android:id="@+id/et_tir_inputText_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="start"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@id/et_tir_inputText_3"
+        app:layout_constraintStart_toStartOf="@+id/tv_tir_text_2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tir_text_2" />
+
+    <TextView
+        android:id="@+id/tv_tir_text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:gravity="start"
+        android:text="@string/tv_tir_text_3"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_tir_inputText_2" />
+
+    <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+        android:id="@+id/et_tir_inputText_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="start"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@id/et_tir_inputText_4"
+        app:layout_constraintStart_toStartOf="@+id/tv_tir_text_3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tir_text_3" />
+
+    <TextView
+        android:id="@+id/tv_tir_text_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:gravity="start"
+        android:text="@string/tv_tir_text_4"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_tir_inputText_3" />
+
+    <de.kdsoftworx.ls_babyalbum2.Helper.ActionDoneEditText
+        android:id="@+id/et_tir_inputText_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:ems="11"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="start"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textColor="@color/colorBlack"
+        android:textSize="15dp"
+        android:imeOptions="actionDone"
+        app:layout_constraintStart_toStartOf="@+id/tv_tir_text_4"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tir_text_4" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_tir_pic_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/shadow"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivbg_tir_pic2"
+        app:layout_constraintTop_toBottomOf="@+id/et_tir_inputText_4">
+
+      <ImageView
+          android:id="@+id/iv_tir_pic_1"
+          android:layout_width="130dp"
+          android:layout_height="130dp"
+          android:adjustViewBounds="true"
+          android:background="@color/colorPrimary"
+          android:scaleType="fitCenter"
+          android:src="@drawable/add_icon_imageview"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

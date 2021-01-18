@@ -1,0 +1,284 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Little Steps: Mein Babyalbum</string>
+
+    <!-- Server Address -->
+    <string name="server_address_register">http://steps.ddnss.eu/Register.php</string>
+    <string name="server_address_loginsm">"http://steps.ddnss.eu/Login_sm.php"</string>
+    <string name="server_address_login">"http://steps.ddnss.eu/Login.php"</string>
+
+    <!-- Database + Table Name -->
+    <string name="databaseName">LSDatabase.db</string>
+    <string name="tableName">LSBookData</string>
+
+    <!-- Facebook Login -->
+    <string name="facebook_app_id">2936940743054112</string>
+    <string name="fb_login_protocol_scheme">fb2936940743054112</string>
+    <string name="fb_login_button_text">weiter mit facebook</string>
+
+    <!-- Google Login -->
+    <string name="googleClient_id">585836772594-pn48kv887jiv3e8rlkg490ne4sr6a021.apps.googleusercontent.com</string>
+    <string name="googleClient_secret">ZgTvhQt7Te_vlN0txATG4Kz1</string>
+    <string name="google_login_button_text">weiter mit Google</string>
+
+    <!-- Login -->
+    <string name="hl_Login">Einloggen</string>
+
+    <string name="tv_welcome">Willkommen</string>
+
+    <string name="tv_Username">Username</string>
+    <string name="tv_Passwort">Passwort</string>
+    <string name="tv_Conf_Passwort">Passwort wiederholen</string>
+
+    <string name="b_Login">einloggen</string>
+    <string name="b_Registry">Registrieren</string>
+
+
+    <!-- Registry -->
+    <string name="hl_Register">Registrieren</string>
+
+    <string name="tv_reg_Titel_1">Username und Kennwort</string>
+    <string name="tv_reg_Titel_2">Personendaten</string>
+
+    <string name="tv_Salutation">Anrede</string>
+    <string name="tv_Salutation_Mr">Herr</string>
+    <string name="tv_Salutation_Mrs">Frau</string>
+    <string name="tv_Titel">Titel (Dr., Prof., usw.)</string>
+    <string name="tv_Name">Vorname</string>
+    <string name="tv_Surname">Nachname</string>
+    <string name="tv_DateOfBirth">Geburtsdatum</string>
+    <string name="tv_Street">Straße und Hausnummer</string>
+    <string name="tv_PostCode">PLZ</string>
+    <string name="tv_Location">Ort</string>
+    <string name="tv_Email">E-Mail</string>
+    <string name="tv_Phone">Telefon</string>
+
+    <!-- Sign Up -->
+    <string name="hl_SignUp">Registrieren</string>
+    <string name="tv_signup_Titel">Registrieren</string>
+    <string name="tv_sozial_Media">oder melde dich an mit</string>
+
+    <!-- Intro / OnBoarding -->
+    <string name="txt_welcome_title">Hallo</string>
+    <string name="txt_welcome_2">Willkommen bei Little Steps, der Babybuch-App.</string>
+    <string name="txt_tips_title">TIPS</string>
+    <string name="txt_tips">Lass dir von uns einen kurzen Überblick geben.</string>
+    <string name="txt_add_title">BUCH ANLEGEN</string>
+    <string name="txt_add">Tippe auf den Add-Button und lege ein neues Babybuch an.</string>
+    <string name="txt_edit_titel">ÄNDERN</string>
+    <string name="txt_edit">Wische nach rechts um den Namen des Buches zu ändern.</string>
+    <string name="txt_delete_title">LÖSCHEN</string>
+    <string name="txt_delete">Wische nach links, um das Buch zu löschen.</string>
+    <string name="txt_start_title">LOS GEHT´S</string>
+    <string name="txt_start">Tippe auf den Namen, um mit deinem Babybuch zu starten. Viel Spaß!</string>
+
+    <!-- Account Overview -->
+    <string name="tv_account_Number"> </string>
+    <string name="tv_account_Name">keine Einträge vorhanden</string>
+    <string name="tv_booknametextsnippet">Buch von </string>
+    <string name="tv_ao_headline">Babybuch auswählen</string>
+    <string name="tv_editdialog_headline">Name ändern</string>
+    <string name="bao_ok_text">Löschen</string>
+    <string name="bao_edit_text">Ändern</string>
+    <string name="bao_cancel_text">Abbrechen</string>
+    <string name="m_RequestDeleteAccout">Daten löschen?</string>
+    <string name="m_AccountDeleted">Account gelöscht</string>
+
+    <!-- Cropper -->
+    <string name="crop_image_menu_rotate_left">links drehen</string>
+    <string name="crop_image_menu_rotate_right">rechts drehen</string>
+    <string name="crop_image_menu_crop">auswählen</string>
+    <string name="crop_image_menu_flip">spiegeln</string>
+    <string name="crop_image_menu_flip_horizontally">horizontal</string>
+    <string name="crop_image_menu_flip_vertically">vertical</string>
+
+    <string name="pick_image_intent_chooser_title">quelle wählen</string>
+
+    <string name="crop_image_activity_no_permissions">Abbruch, benötigte Berechtigungen wurden nicht erteilt</string>
+
+
+    <!-- Fragment Half Title -->
+    <string name="tv_cd_Titel_1">Dieses Buch gehört</string>
+    <string name="tv_cd_Titel_2_1">Dein 1. Lebensjahr</string>
+    <string name="tv_cd_Titel_2_2">Liebevoll gestaltet von</string>
+    <string name="tab_name_ht">Willkommen</string>
+
+    <string name="ett_ChildName">Name</string>
+    <string name="ett_Creator">Ersteller</string>
+
+    <!-- Fragment Pregnancy -->
+    <string name="tv_p_Titel">Die Schwangerschaft</string>
+    <string name="tv_p_preg_knowing">Erfahren, dass Mama schwanger ist, haben wir…</string>
+    <string name="tv_p_preg_feeling">So haben wir uns gefühlt:</string>
+    <string name="tv_p_preg_well_being">Wärend der Schangerschaft ging es Mama…</string>
+    <string name="tv_p_preg_sex">Welches Geschlecht du hast, haben wir erfahren…</string>
+    <string name="tv_p_preg_movements">Deine Bewegungen haben sich angefühlt…</string>
+    <string name="tv_p_poem">Eine Mutter ist der einzige Mensch\nauf der Welt, der dich schon liebt,\nbevor er dich kennt \n (Johann Heinrich Pestalozzi)</string>
+    <string name="tab_name_pregnancy">Schwangerschaft</string>
+
+    <string name="iv_p_tooltip_pic1">Mama am Anfang der Schwangerschaft</string>
+    <string name="iv_p_tooltip_pic2">Mama am Ende der Schwangerschaft</string>
+    <string name="iv_p_tooltip_pic3">Lieblings Ultraschallbild</string>
+
+
+    <!-- Fragment Child Birth Data -->
+    <string name="tv_cbd_Titel">Wir freuen uns, dass du da bist!</string>
+    <string name="tv_childname_cbd">Dein wunderschöner Name ist: </string>
+    <string name="tv_birthday_time_cbd">Geburtsdatum und -uhrzeit: </string>
+    <string name="tv_birth_weight_cbd">Dein Gewicht: </string>
+    <string name="tv_birth_weight_unit_cbd">g </string>
+    <string name="tv_birth_size_cbd">Deine Körpergröße: </string>
+    <string name="tv_birth_size_unit_cbd">cm </string>
+    <string name="tv_head_circumference_cbd">Dein Kopfumfang: </string>
+    <string name="tv_head_circumference_unit_cbd">cm </string>
+    <string name="tv_eye_color_cbd">Deine Augenfarbe: </string>
+    <string name="tv_hair_color_cbd">Deine Haarfarbe: </string>
+    <string name="tv_star_sign_cbd">Dein Sternzeichen: </string>
+    <string name="tab_name_cbd">Hallo Baby!</string>
+
+    <string name="tp_atTime">um</string>
+    <string name="tp_timeUnit">Uhr</string>
+
+    <!-- Fragment Birth -->
+    <string name="tv_b_Title">Deine Geburt</string>
+    <string name="tv_b_contraction_start">Die Wehen setzten ein, als…</string>
+    <string name="tv_b_contr_start_time">Es war um…</string>
+    <string name="tv_b_contr_start_tud">, am…  </string>
+    <string name="tv_b_contr_start_weahter">Das Wetter an diesem Tag war…</string>
+    <string name="tv_b_fruit_bubble_burst">Die Fruchtblase ist geplatzt…</string>
+    <string name="tv_b_delivery_room_text_1">Deine Mama war um </string>
+    <string name="tv_b_delivery_room_text_2"> im</string>
+    <string name="tv_b_delivery_room_text_3">Kreißsaal und es dauerte noch </string>
+    <string name="tv_b_delivery_room_text_4">Stunden, bis du </string>
+    <string name="tv_b_delivery_room_text_5">auf der Welt warst.</string>
+    <string name="tv_b_location_of_birth">Ort deiner Geburt war…</string>
+    <string name="tv_b_name_midwife">Deine Hebamme hieß…</string>
+    <string name="tv_b_Hospital_Docs_midwife">Die Klinik, Ärzte/Hebammen waren…</string>
+    <string name="tv_b_accompaniment">Wer noch bei der Geburt dabei war…</string>
+    <string name="tab_name_birth">Deine Geburt</string>
+
+    <!-- Fragment Nights -->
+    <string name="tv_n_Title">Deine Nächte</string>
+    <string name="tv_n_text_1">Hier hast du zu Beginn geschlafen…</string>
+    <string name="tv_n_text_2">So oft bist du die erste Zeit aufgewacht…</string>
+    <string name="tv_n_text_3">Dein Lieblings-Gute-Nacht-Lied war…</string>
+    <string name="tv_n_text_4">Das erste Mal in deinem eigenen\n Zimmer hast du geschlafen…</string>
+    <string name="tv_n_text_5">Das erste Mal im großen Gitterbett hast du geschlafen…</string>
+    <string name="tv_n_text_6">Das erste Mal durchgeschlafen hast du…</string>
+    <string name="tab_name_nights">Deine Nächte</string>
+
+    <!-- Fragment Child Birth Data Pics -->
+    <string name="tv_cbd_pics_Title">Die ersten Bilder von dir</string>
+    <string name="tab_name_cbd_pics">Erste Bilder</string>
+    <string name="iv_tooltip_pic1">Erstes Bild von dir</string>
+    <string name="iv_tooltip_pic2">Erstes Bild mit Mama</string>
+
+    <!-- Fragment Easter -->
+    <string name="tv_e_Title">Dein erstes Ostern</string>
+    <string name="tv_e_Title_2_1">B \ni \nl \nd \ne \nr \n</string>
+    <string name="tv_e_Title_2_2">von der Ostereiersuche </string>
+
+    <string name="tv_e_easter_location">Hier haben wir Ostern verbracht:</string>
+    <string name="tv_e_easter_gift">Das alles habe ich gefunden und geschenkt bekommen:</string>
+    <string name="tab_name_e">Ostern</string>
+
+    <!-- Fragment First Bath -->
+    <string name="tv_fb_Title">Das erste Bad</string>
+    <string name="tv_fb_text_1">Dein erstes Bad hast du genommen, am:</string>
+    <string name="tv_fb_text_2">Das hat dir beim baden besonders Spaß gemacht:</string>
+    <string name="tv_fb_text_3">Das mochtest du überhaupt nicht:</string>
+    <string name="tv_fb_text_4">Dein liebstes Wasserspielzeug war…</string>
+    <string name="tv_fb_text_5">Wer hat noch mitgebadet?</string>
+    <string name="tab_name_fb">Badezimmer</string>
+
+    <!-- Fragment First Snow -->
+    <string name="tv_fs_Title">Dein erster Schnee</string>
+    <string name="tv_fs_text_1">Du hast das erste mal Schnee erlebt…</string>
+    <string name="tv_fs_text_2">Du fandest es…</string>
+    <string name="tv_fs_text_3">Deinen ersten Schneemann hast du gebaut mit…</string>
+    <string name="tv_fs_text_4">und Schlitten gefahren bist du auch…</string>
+    <string name="tv_fs_poem">Ei, du liebe, liebe Zeit,\n ei, wie hat´s geschneit, geschneit!\n Rings herum, wie ich mich dreh´,\n nichts als Schnee und lauter Schnee.\n
+                            Wald und Wiesen, Hof und Hecken,\n alles steckt in weißen Decken.\n (Friedrich Güll)</string>
+    <string name="tab_name_fs">Erster Schnee</string>
+
+    <!-- Fragment Time Is Running -->
+    <string name="tv_tir_Title">Die Zeit rennt</string>
+    <string name="tv_tir_text_1">Dein erstes Lächeln…</string>
+    <string name="tv_tir_text_2">Dein erstes lautes Lachen…</string>
+    <string name="tv_tir_text_3">Du hast dich von selbst gedreht…</string>
+    <string name="tv_tir_text_4">Das erste Mal alleine gesessen bist du…</string>
+    <string name="tv_tir_text_5">Du konntest dich das erste Mal vorwärts bewegen, indem du…</string>
+    <string name="tv_tir_text_6">Du bist gekrabbelt…</string>
+
+    <string name="tv_tir_poem">Sind die Kinder klein,\n müssen wir ihnen helfen,\n Wurzeln zu fassen.\n
+                                Sind sie aber groß geworden,\n müssen wir ihnen Flügel schenken.\n
+                                 (Sprichwort aus Indien)</string>
+    <string name="tab_name_tir">Die Zeit rennt</string>
+
+    <!-- Fragment Baptism -->
+    <string name="tv_btm_Title">Deine Taufe</string>
+    <string name="tv_btm_text_1_0">Getauft wurdest du am </string>
+    <string name="tv_btm_text_1_1">in der Kirche</string>
+    <string name="tv_btm_text_1_2">in </string>
+    <string name="tv_btm_text_1_3">.</string>
+    <string name="tv_btm_text_2">Getauft wurdest du von…</string>
+    <string name="tv_btm_text_3">Deine Paten sind…</string>
+    <string name="tv_btm_text_4">Gefeiert haben wir deine Taufe in…</string>
+    <string name="tv_btm_text_5">Während wir feierten hast du…</string>
+    <string name="tv_btm_text_6">Zu Essen gab es…</string>
+    <string name="tv_btm_text_7">Deine Taufgäste waren…</string>
+    <string name="tv_btm_text_8">Das hast du geschenkt bekommen…</string>
+    <string name="tv_btm_text_9">Deine Taufnamen sind…</string>
+    <string name="tv_btm_text_10">Dein Taufspruch war…</string>
+    <string name="tab_name_btm">Deine Taufe</string>
+
+    <!-- First Steps -->
+    <string name="tv_fst_Title">Erste Schritte</string>
+    <string name="tv_fst_text_1">Deine Ersten Schritte an Möbeln entlang, hast du gemacht…</string>
+    <string name="tv_fst_text_2">Das Erste mal alleine Gestanden bist du…</string>
+    <string name="tv_fst_text_3">Die Ersten freien Schritte \nhast du gemacht…</string>
+    <string name="tv_fst_text_4">Ohne Mama bist du rumgeflitzt…</string>
+    <string name="tv_fst_text_5">Deine Ersten Schühchen hast du bekommen…</string>
+    <string name="tv_fst_poem">Vier Füße, groß bis mittelklein\n
+                                gingen lange Zeit allein.\n
+                                Jetzt gehen bald auf Schritt und Tritt,\n
+                                zwei winzig kleine Füße mit.\n
+                                (Unbekannt)</string>
+
+    <string name="tab_name_fst">Erste Schritte</string>
+
+    <!-- General Texts -->
+    <string name="b_Register">registrieren</string>
+    <string name="b_continue">weiter</string>
+
+    <!-- Menu/Options -->
+    <string name="settings">Einstellungen</string>
+    <string name="change_book">Babybuch wechseln</string>
+    <string name="order_book">Babybuch bestellen</string>
+    <string name="logout">Logout</string>
+
+    <!-- Custom Dialog -->
+    <string name="dialogHeadline">Neues Babybuch anlegen</string>
+    <string name="defaultTextInputField">Name des Kindes</string>
+    <string name="b_create">Erstellen</string>
+    <string name="b_cancel">Abbrechen</string>
+
+    <!-- Messages, Warnings, Errors -->
+    <string name="m_RegistryOK">Registrierung erfolgreich! Willkommen bei Steps, Mein Babyalbum.</string>
+    <string name="m_CreatePDFMessageTitle">Bitte um etwas Geduld</string>
+    <string name="m_CreatePDFMessageText">Buchdatei wird erzeugt und gesendet.</string>
+
+    <string name="e_PasswordNotOK">Fehler: Das Passwort stimmt nicht überein!</string>
+    <string name="e_DataInclomplete">Daten unvollständig! Bitte prüfen.</string>
+    <string name="e_EmptyEditText">Bitte Feld ausfüllen.</string>
+    <string name="e_UserFound">Benutzername bereits vorhanden</string>
+    <string name="e_ChildAccountFound">Name bereits vorhanden</string>
+    <string name="e_PicNotOk">Fehler! Bitte Bild erneut laden</string>
+
+
+
+    <!-- poem later -->
+    <string name="tv_pl_poem">Die häuslichen Freuden der Menschen sind die schönsten der Erde,\n
+        und die Freude der Eltern über Ihre Kinder\n
+        ist die heiligste Freude der Menschheit.</string>
+
+</resources>
