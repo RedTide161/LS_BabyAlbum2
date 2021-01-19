@@ -68,5 +68,8 @@ dependencies {
     // Include Google Play Service
     implementation 'com.google.android.gms:play-services-auth:18.1.0'
 
+    // Size Unit (SDP) for all screen sizes
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
 
 }
