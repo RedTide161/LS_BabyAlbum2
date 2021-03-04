@@ -10,11 +10,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 
-import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.hendrix.pdfmyxml.PdfDocument;
 import com.hendrix.pdfmyxml.viewRenderer.AbstractViewRenderer;
@@ -447,7 +445,7 @@ public class PdfDocumentCreater {
                 // Set Bitmap Reuse...
                 page14.setReuseBitmap(true);
 
-                final AbstractViewRenderer page15 = new AbstractViewRenderer(context, R.layout.fragment_times_running_2) {
+                final AbstractViewRenderer page15 = new AbstractViewRenderer(context, R.layout.fragment_times_running_2_oou) {
 
                     @Override
                     protected void initView(View view) {
