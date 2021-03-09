@@ -1,7 +1,6 @@
 package de.kdsoftworx.ls_babyalbum2.Login;
 
 
-import android.Manifest;
 import android.content.Intent;
 
 import com.facebook.CallbackManager;
@@ -23,7 +22,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -31,7 +29,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.core.app.ActivityCompat;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.android.volley.RequestQueue;
@@ -51,11 +48,8 @@ import de.kdsoftworx.ls_babyalbum2.Data.UserLokalStore;
 import de.kdsoftworx.ls_babyalbum2.Helper.CShowProgress;
 import de.kdsoftworx.ls_babyalbum2.OnBoarding.IntroActivity;
 import de.kdsoftworx.ls_babyalbum2.R;
-import de.kdsoftworx.ls_babyalbum2.Registry.RegisterActivity;
 import de.kdsoftworx.ls_babyalbum2.Registry.SignupActivity;
 import de.kdsoftworx.ls_babyalbum2.ViewModel.BookdataViewModel;
-
-import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 public class LoginActivity extends AppCompatActivity {
 
