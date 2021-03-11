@@ -186,6 +186,10 @@ public class SignupActivity extends AppCompatActivity {
             final Response.ErrorListener errorListener = new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
+
+                    //dismiss Progress Bar
+                    cShowProgress.hideProgress();
+
                     Toast.makeText(getApplicationContext(),error.toString(), Toast.LENGTH_LONG).show();
                 }
             };

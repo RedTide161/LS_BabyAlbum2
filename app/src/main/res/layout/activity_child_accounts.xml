@@ -18,7 +18,7 @@
         android:id="@+id/tv_empty_account_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:padding="@dimen/_4sdp"
         android:text="@string/tv_account_Name"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
@@ -30,14 +30,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/_12sdp"
         android:clickable="true"
         android:foreground="@drawable/ic_add_circle_grey_24_2dp"
         app:srcCompat="?attr/colorBackgroundFloating"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:fabSize="normal"
-        app:elevation="8dp"/>
+        app:elevation="@dimen/_8sdp"/>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
