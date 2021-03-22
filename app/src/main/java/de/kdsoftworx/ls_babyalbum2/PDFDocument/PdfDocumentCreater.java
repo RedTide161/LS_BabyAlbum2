@@ -65,7 +65,7 @@ public class PdfDocumentCreater {
 
                 // Create all selected Pages (set Texts an Image to Page)
                 // ------------------------ HALF-TITLE ---------------------------------------------
-                final AbstractViewRenderer page1 = new AbstractViewRenderer(context, R.layout.fragment_half_title) {
+                final AbstractViewRenderer page1 = new AbstractViewRenderer(context, R.layout.fragment_half_title_oou) {
 
                     @Override
                     protected void initView(View view) {
