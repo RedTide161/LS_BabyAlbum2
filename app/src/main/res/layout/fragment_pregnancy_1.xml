@@ -8,214 +8,259 @@
     android:background="@drawable/bg_twocolored_yellow">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-        <ImageView
-            android:id="@+id/ivbg_p_pic1"
-            android:layout_width="170dp"
-            android:layout_height="194dp"
-            android:layout_marginTop="4dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline_p_1"
-            app:srcCompat="@drawable/pregnant_woman" />
-
-        <ImageView
-            android:id="@+id/ivbg_p_pic2"
-            android:layout_width="89dp"
-            android:layout_height="78dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_p_preg_sex"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_p_preg_feeling"
-            app:srcCompat="@drawable/purple_heart" />
-
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/tv_intro_pregnancy"
-            android:layout_width="315dp"
+            android:layout_width="@dimen/_315sdp"
             android:layout_height="wrap_content"
-            android:layout_margin="30dp"
-            android:layout_marginTop="50dp"
+            android:layout_margin="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_50sdp"
             android:fontFamily="@font/bubblegum_sans"
+            android:gravity="center_horizontal"
             android:text="@string/tv_p_Titel"
             android:textAlignment="center"
-            android:gravity="center_horizontal"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
             android:textColor="@color/colorBlack"
-            android:textStyle="bold|italic"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textStyle="bold|italic" />
 
         <TextView
             android:id="@+id/tv_p_preg_knowing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="24dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
             android:fontFamily="@font/bubblegum_sans"
             android:text="@string/tv_p_preg_knowing"
             android:textColor="@color/colorBlack"
-            android:textStyle="bold|italic"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_intro_pregnancy" />
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold|italic" />
 
         <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
             android:id="@+id/et_p_preg_knowing"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_2sdp"
             android:background="@android:color/transparent"
             android:ems="15"
             android:fontFamily="@font/architects_daughter"
             android:gravity="start"
-            android:inputType="textCapSentences|textMultiLine"
-            android:textSize="15dp"
             android:imeOptions="actionNext"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="55"
+            android:maxLines="2"
             android:nextFocusDown="@+id/et_p_preg_feeling"
-            app:layout_constraintStart_toStartOf="@+id/tv_p_preg_knowing"
-            app:layout_constraintTop_toBottomOf="@+id/tv_p_preg_knowing" />
+            android:textSize="@dimen/_12sdp" />
 
         <TextView
             android:id="@+id/tv_p_preg_feeling"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="32dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_16sdp"
             android:fontFamily="@font/bubblegum_sans"
-            android:gravity="start"
             android:text="@string/tv_p_preg_feeling"
             android:textColor="@color/colorBlack"
-            android:textStyle="bold|italic"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_p_preg_knowing" />
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold|italic" />
 
         <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
             android:id="@+id/et_p_preg_feeling"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_2sdp"
             android:background="@android:color/transparent"
-            android:ems="12"
+            android:ems="15"
             android:fontFamily="@font/architects_daughter"
             android:gravity="start"
-            android:inputType="textCapSentences|textMultiLine"
-            android:textColor="@color/colorBlack"
-            android:textSize="15dp"
             android:imeOptions="actionNext"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="55"
+            android:maxLines="2"
             android:nextFocusDown="@+id/et_p_preg_well_being"
-            app:layout_constraintStart_toStartOf="@+id/tv_p_preg_feeling"
-            app:layout_constraintTop_toBottomOf="@+id/tv_p_preg_feeling" />
-
-        <TextView
-            android:id="@+id/tv_p_preg_well_being"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:fontFamily="@font/bubblegum_sans"
-            android:gravity="end"
-            android:text="@string/tv_p_preg_well_being"
             android:textColor="@color/colorBlack"
-            android:textStyle="bold|italic"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_p_preg_feeling" />
+            android:textSize="@dimen/_12sdp" />
 
-        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
-            android:id="@+id/et_p_preg_well_being"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:background="@android:color/transparent"
-            android:ems="11"
-            android:fontFamily="@font/architects_daughter"
-            android:gravity="start"
-            android:inputType="textCapSentences|textMultiLine"
-            android:textSize="15dp"
-            android:imeOptions="actionNext"
-            android:nextFocusDown="@+id/et_p_preg_sex"
-            app:layout_constraintStart_toStartOf="@+id/tv_p_preg_well_being"
-            app:layout_constraintTop_toBottomOf="@+id/tv_p_preg_well_being" />
+            android:layout_marginTop="@dimen/_4sdp"
+            android:gravity="top"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_p_preg_sex"
-            android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/ivbg_p_pic2"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:srcCompat="@drawable/purple_heart" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_minus60sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_p_preg_well_being"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:fontFamily="@font/bubblegum_sans"
+                    android:gravity="end"
+                    android:text="@string/tv_p_preg_well_being"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold|italic" />
+
+                <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+                    android:id="@+id/et_p_preg_well_being"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@android:color/transparent"
+                    android:ems="11"
+                    android:fontFamily="@font/architects_daughter"
+                    android:gravity="start"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLength="55"
+                    android:maxLines="2"
+                    android:nextFocusDown="@+id/et_p_preg_sex"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_p_preg_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:fontFamily="@font/bubblegum_sans"
+                    android:gravity="start"
+                    android:text="@string/tv_p_preg_sex"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold|italic" />
+
+                <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+                    android:id="@+id/et_p_preg_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@android:color/transparent"
+                    android:ems="12"
+                    android:fontFamily="@font/architects_daughter"
+                    android:gravity="start"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLength="55"
+                    android:maxLines="2"
+                    android:nextFocusForward="@+id/et_p_preg_movements"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:fontFamily="@font/bubblegum_sans"
-            android:gravity="start"
-            android:text="@string/tv_p_preg_sex"
-            android:textColor="@color/colorBlack"
-            android:textStyle="bold|italic"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_p_preg_well_being" />
+            android:orientation="horizontal">
 
-        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
-            android:id="@+id/et_p_preg_sex"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:ems="12"
-            android:fontFamily="@font/architects_daughter"
-            android:gravity="start"
-            android:inputType="textCapSentences|textMultiLine"
-            android:textSize="15dp"
-            android:imeOptions="actionNext"
-            android:nextFocusForward="@+id/et_p_preg_movements"
-            app:layout_constraintStart_toStartOf="@+id/tv_p_preg_sex"
-            app:layout_constraintTop_toBottomOf="@+id/tv_p_preg_sex"
-            app:layout_constraintBottom_toTopOf="@+id/guideline_p_1"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginEnd="@dimen/_1sdp"
+                android:layout_marginRight="@dimen/_1sdp"
+                android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_p_preg_movements"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="32dp"
-            android:fontFamily="@font/bubblegum_sans"
-            android:text="@string/tv_p_preg_movements"
-            android:textColor="@color/colorBlack"
-            android:textStyle="bold|italic"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/et_p_preg_sex" />
+                <TextView
+                    android:id="@+id/tv_p_preg_movements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/bubblegum_sans"
+                    android:text="@string/tv_p_preg_movements"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold|italic" />
 
-        <de.kdsoftworx.ls_babyalbum2.Helper.ActionDoneEditText
-            android:id="@+id/et_p_preg_movements"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:background="@android:color/transparent"
-            android:ems="10"
-            android:fontFamily="@font/architects_daughter"
-            android:gravity="start"
-            android:maxLines="5"
-            android:maxLength="130"
-            android:inputType="textCapSentences|textMultiLine"
-            android:paddingBottom="32dp"
-            android:textSize="15dp"
-            android:imeOptions="actionDone"
-            app:layout_constraintStart_toStartOf="@+id/tv_p_preg_movements"
-            app:layout_constraintTop_toBottomOf="@+id/tv_p_preg_movements" />
+                <de.kdsoftworx.ls_babyalbum2.Helper.ActionDoneEditText
+                    android:id="@+id/et_p_preg_movements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/architects_daughter"
+                    android:gravity="start"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLength="55"
+                    app:autoSizeMaxTextSize="@dimen/_15sdp"
+                    app:autoSizeMinTextSize="@dimen/_4sdp"
+                    app:autoSizeStepGranularity="@dimen/_1sdp"
+                    app:autoSizeTextType="uniform" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline_p_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_end="194dp" />
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_marginTop="@dimen/_8sdp">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/ivbg_p_pic1"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_154sdp"
+                    android:layout_gravity="end|bottom"
+                    app:srcCompat="@drawable/pregnant_woman" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </ScrollView>

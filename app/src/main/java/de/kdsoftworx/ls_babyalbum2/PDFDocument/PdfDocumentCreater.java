@@ -83,7 +83,7 @@ public class PdfDocumentCreater {
                 page1.setReuseBitmap(true);
 
                 // ------------------------ PREGNANCY ----------------------------------------------
-                final AbstractViewRenderer page2 = new AbstractViewRenderer(context, R.layout.fragment_pregnancy_1) {
+                final AbstractViewRenderer page2 = new AbstractViewRenderer(context, R.layout.fragment_pregnancy_1_oou) {
 
                     @Override
                     protected void initView(View view) {
