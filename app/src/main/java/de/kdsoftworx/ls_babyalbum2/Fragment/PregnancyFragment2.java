@@ -55,14 +55,14 @@ public class PregnancyFragment2 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View root = inflater.inflate(R.layout.fragment_pregnancy_2, container, false);
+        View root = inflater.inflate(R.layout.fragment_pregnancy_2_sdp, container, false);
 
         // initialise all imageViews
         init(root);
 
         // get newest Data from Database
         bookdataViewModel = ViewModelProviders.of(this).get(BookdataViewModel.class);
-        bookdataViewModel.getAllBookdataEntries().observe(this, new Observer<List<LSBookdata>>() {
+        bookdataViewModel.getAllBookdataEntries().observe(getViewLifecycleOwner(), new Observer<List<LSBookdata>>() {
             @Override
             public void onChanged(List<LSBookdata> lsBookdata) {
 
