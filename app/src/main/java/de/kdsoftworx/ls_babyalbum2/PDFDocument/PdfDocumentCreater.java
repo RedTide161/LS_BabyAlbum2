@@ -107,7 +107,7 @@ public class PdfDocumentCreater {
                 page2.setReuseBitmap(true);
 
 
-                final AbstractViewRenderer page3 = new AbstractViewRenderer(context, R.layout.fragment_pregnancy_2) {
+                final AbstractViewRenderer page3 = new AbstractViewRenderer(context, R.layout.fragment_pregnancy_2_oou) {
 
                     @Override
                     protected void initView(View view) {

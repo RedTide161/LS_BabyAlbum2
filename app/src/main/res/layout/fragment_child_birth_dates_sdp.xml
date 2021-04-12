@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bkgnd_sv_bd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_twocolored_green"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_intro_birthdates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:gravity="center_horizontal"
+        android:text="@string/tv_cbd_Titel"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold|italic"/>
+
+
+    <TextView
+        android:id="@+id/tv_childname"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="@string/tv_childname_cbd"
+        android:textStyle="bold|italic"/>
+
+    <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+        android:id="@+id/et_childname_cbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/architects_daughter"
+        android:gravity="start"
+        android:imeOptions="actionNext"
+        android:inputType="textCapSentences"
+        android:nextFocusDown="@id/et_birthday_cbd"
+        android:textSize="15dp" />
+
+
+    <ImageView
+            android:id="@+id/ivbg_cbd_pic1"
+            android:layout_width="87dp"
+            android:layout_height="101dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/et_birth_weight_cbd"
+            app:layout_constraintStart_toEndOf="@+id/et_birth_weight_cbd"
+            app:layout_constraintTop_toBottomOf="@+id/et_childname_cbd"
+            app:srcCompat="@drawable/heart" />
+
+
+        <ImageView
+            android:id="@+id/ivbg_cbd_pic2"
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/et_hair_color_cbd"
+            app:layout_constraintTop_toBottomOf="@+id/et_birth_size_cbd"
+            app:srcCompat="@drawable/babysocks" />
+
+
+        <TextView
+            android:id="@+id/tv_birthday_time"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="end"
+            android:text="@string/tv_birthday_time_cbd"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_childname_cbd" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_birthday_cbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:ems="11"
+            android:focusable="false"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="none"
+            android:nextFocusDown="@id/et_birth_weight_cbd"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_birthday_time"
+            app:layout_constraintTop_toBottomOf="@+id/tv_birthday_time" />
+
+        <TextView
+            android:id="@+id/tv_birth_weight_cbd"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_birth_weight_cbd"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_birthday_cbd" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_birth_weight_cbd"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:ems="4"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="4"
+            android:nextFocusDown="@id/et_birth_size_cbd"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_birth_weight_cbd"
+            app:layout_constraintTop_toBottomOf="@+id/tv_birth_weight_cbd" />
+
+        <TextView
+            android:id="@+id/tv_birth_weight_unit"
+            android:layout_width="9dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_birth_weight_unit_cbd"
+            android:textStyle="bold|italic"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_birth_weight_cbd"
+            app:layout_constraintStart_toEndOf="@+id/et_birth_weight_cbd" />
+
+        <TextView
+            android:id="@+id/tv_birth_size"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="end"
+            android:text="@string/tv_birth_size_cbd"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_birth_weight_cbd" />
+
+        <TextView
+            android:id="@+id/tv_birth_size_unit"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_birth_size_unit_cbd"
+            android:textStyle="bold|italic"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_birth_size_cbd"
+            app:layout_constraintEnd_toEndOf="@+id/tv_birth_size" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_birth_size_cbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@android:color/transparent"
+            android:ems="6"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="2"
+            android:nextFocusDown="@id/et_head_circumference_cbd"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_birth_size_unit"
+            app:layout_constraintTop_toBottomOf="@+id/tv_birth_size" />
+
+
+        <TextView
+            android:id="@+id/tv_head_circumference"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="start"
+            android:text="@string/tv_head_circumference_cbd"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_birth_size_cbd" />
+
+        <TextView
+            android:id="@+id/tv_head_circumference_unit"
+            android:layout_width="17dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_head_circumference_unit_cbd"
+            android:textStyle="bold|italic"
+            app:layout_constraintBaseline_toBaselineOf="@+id/et_head_circumference_cbd"
+            app:layout_constraintStart_toEndOf="@+id/et_head_circumference_cbd" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_head_circumference_cbd"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:ems="2"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="2"
+            android:nextFocusDown="@id/et_eye_color_cbd"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_head_circumference"
+            app:layout_constraintTop_toBottomOf="@+id/tv_head_circumference" />
+
+        <TextView
+            android:id="@+id/tv_eye_color"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="end"
+            android:text="@string/tv_eye_color_cbd"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_head_circumference_cbd" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_eye_color_cbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:ems="11"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="11"
+            android:nextFocusDown="@id/et_hair_color_cbd"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_eye_color"
+            app:layout_constraintTop_toBottomOf="@+id/tv_eye_color" />
+
+        <TextView
+            android:id="@+id/tv_hair_color"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:text="@string/tv_hair_color_cbd"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_eye_color_cbd" />
+
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionNextEditText
+            android:id="@+id/et_hair_color_cbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:ems="15"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="start"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:maxLength="15"
+            android:nextFocusDown="@id/et_star_sign_cbd"
+            android:textSize="15dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_hair_color"
+            app:layout_constraintTop_toBottomOf="@+id/tv_hair_color" />
+
+        <TextView
+            android:id="@+id/tv_star_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/bubblegum_sans"
+            android:gravity="end"
+            android:text="@string/tv_star_sign_cbd"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_hair_color_cbd" />
+
+        <de.kdsoftworx.ls_babyalbum2.Helper.ActionDoneEditText
+            android:id="@+id/et_star_sign_cbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="32dp"
+            android:background="@android:color/transparent"
+            android:ems="12"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="end"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="12"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_star_sign"
+            app:layout_constraintTop_toBottomOf="@+id/tv_star_sign" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="1dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="1dp" />
+
+</LinearLayout>

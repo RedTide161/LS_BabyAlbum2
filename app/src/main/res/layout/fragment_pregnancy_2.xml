@@ -5,78 +5,38 @@
     android:id="@+id/bkgnd_ll_ht"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_twocolored_yellow">
+    android:gravity="center"
+    android:background="@drawable/bg_twocolored_yellow"
+    android:orientation="vertical">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true">
-        <!-- android:background="@drawable/bg_twocolored_yellow"-->
-
-        <ImageView
-            android:id="@+id/ivbg_p_pic1"
-            android:layout_width="47dp"
-            android:layout_height="44dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="40dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ll_p_mom_1"
-            app:srcCompat="@drawable/purple_heart_2" />
-
-        <ImageView
-            android:id="@+id/ivbg_p_pic2"
-            android:layout_width="47dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginRight="24dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ll_p_mom_2"
-            app:srcCompat="@drawable/purple_heart_2" />
-
-
-        <TextView
-            android:id="@+id/tv_p_poem"
-            android:layout_width="239dp"
-            android:layout_height="75dp"
-            android:focusable="false"
-            android:gravity="center_horizontal"
-            android:text="@string/tv_p_poem"
-            android:textSize="14dp"
-            app:layout_constraintBottom_toBottomOf="@+id/ivbg_p_pic1"
-            app:layout_constraintEnd_toStartOf="@+id/ivbg_p_pic2"
-            app:layout_constraintStart_toEndOf="@+id/ivbg_p_pic1"
-            app:layout_constraintTop_toTopOf="@+id/ivbg_p_pic1" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_minus20sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_16sdp">
 
         <LinearLayout
             android:id="@+id/ll_p_mom_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginRight="24dp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
             android:background="@drawable/shadow"
-            android:elevation="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:elevation="@dimen/_8sdp">
 
             <ImageView
                 android:id="@+id/iv_p_mom_1"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="@dimen/_115sdp"
                 android:adjustViewBounds="true"
                 android:background="@color/colorPrimary"
                 android:scaleType="fitCenter"
                 android:src="@drawable/add_icon_imageview"
-                android:tooltipText="@string/iv_p_tooltip_pic1"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:tooltipText="@string/iv_p_tooltip_pic1" />
 
         </LinearLayout>
 
@@ -84,68 +44,89 @@
             android:id="@+id/ll_p_mom_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginRight="24dp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
             android:background="@drawable/shadow"
-            android:elevation="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/ll_p_mom_1"
-            app:layout_constraintTop_toTopOf="parent">
+            android:elevation="8dp">
 
             <ImageView
                 android:id="@+id/iv_p_mom_2"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="@dimen/_115sdp"
                 android:adjustViewBounds="true"
                 android:background="@color/colorPrimary"
                 android:scaleType="fitCenter"
                 android:src="@drawable/add_icon_imageview"
-                android:tooltipText="@string/iv_p_tooltip_pic2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:tooltipText="@string/iv_p_tooltip_pic2" />
 
         </LinearLayout>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_4sdp">
+
+        <ImageView
+            android:id="@+id/ivbg_p_pic1"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            app:srcCompat="@drawable/purple_heart_2" />
+
+        <TextView
+            android:id="@+id/tv_p_poem"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:focusable="false"
+            android:gravity="center_horizontal"
+            android:text="@string/tv_p_poem"
+            android:textSize="@dimen/_11sdp" />
+
+        <ImageView
+            android:id="@+id/ivbg_p_pic2"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            app:srcCompat="@drawable/purple_heart_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_16sdp">
 
         <LinearLayout
             android:id="@+id/ll_p_ultrasound_pic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_marginBottom="56dp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
             android:background="@drawable/shadow"
-            android:elevation="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@id/tv_p_poem"
-            app:layout_constraintStart_toStartOf="@id/tv_p_poem"
-            app:layout_constraintTop_toBottomOf="@id/tv_p_poem">
+            android:elevation="8dp">
 
             <ImageView
                 android:id="@+id/iv_p_ultrasound_pic"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="@dimen/_115sdp"
                 android:adjustViewBounds="true"
                 android:background="@color/colorPrimary"
                 android:scaleType="fitCenter"
                 android:src="@drawable/add_icon_imageview"
-                android:tooltipText="@string/iv_p_tooltip_pic3"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:tooltipText="@string/iv_p_tooltip_pic3" />
 
         </LinearLayout>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </LinearLayout>
