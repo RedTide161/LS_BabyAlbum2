@@ -54,14 +54,14 @@ public class ChildBirthDatesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
 
-        View root = inflater.inflate(R.layout.fragment_child_birth_dates, container, false);
+        View root = inflater.inflate(R.layout.fragment_child_birth_dates_sdp, container, false);
 
         // initialise all editTexts
         init(root);
 
         // get newest Data from Database
         bookdataViewModel = ViewModelProviders.of(this).get(BookdataViewModel.class);
-        bookdataViewModel.getAllBookdataEntries().observe(this, new Observer<List<LSBookdata>>() {
+        bookdataViewModel.getAllBookdataEntries().observe(getViewLifecycleOwner(), new Observer<List<LSBookdata>>() {
             @Override
             public void onChanged(List<LSBookdata> lsBookdata) {
 
